@@ -38,3 +38,6 @@ int main() {
 //melakukukan perulangan setiap baris
 		while (getline(infile, baris))
 		{
+			//dan menampilkan disini
+			cout << baris << '\n';
+		}
