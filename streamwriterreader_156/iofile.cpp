@@ -35,3 +35,6 @@ int main() {
 	//jike file ada maka
 	if (infile.is_open())
 	{
+//melakukukan perulangan setiap baris
+		while (getline(infile, baris))
+		{
