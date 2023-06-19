@@ -13,4 +13,9 @@ int main() {
 	//membuka file dalam mode menulis
 	ofstream outfile;
 	//menunjuk ke sebuah nama file
+	outfile.open(namaFile + ".txt, ios::out");
+
+	cout << ">=menulis file, \'q' untuk keluar" << endl;
+
+	
 }
