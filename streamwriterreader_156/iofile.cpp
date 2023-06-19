@@ -13,18 +13,18 @@ int main() {
 
 	cout << ">= menulis file, \'q'\ untuk keluar" << endl;
 
-//unlimited loop untuk menulis
-	while (true){
+	//unlimited loop untuk menulis
+	while (true) {
 		cout << "-";
-	//mendapatkan setiap karakter dalam satu baris
-	getline(cin, baris);
-	//loop akan berhenti jika andamemasukan karakter q;
-	if (baris == "q") break;
-}
+		//mendapatkan setiap karakter dalam satu baris
+		getline(cin, baris);
+		//loop akan berhenti jika andamemasukan karakter q;
+		if (baris == "q") break;
+	}
 
 	//selesai dalam menulis sekarang tutup filenyA
 	outfile.close();
-	
+
 	//MEMBUKA FILE DALAM Mode membaca
 	ifstream infile;
 	//menunjuk ke sebuah file
@@ -44,3 +44,7 @@ int main() {
 		//tutup file tersebut setelah selesai
 		infile.close();
 	}
+	//jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "unable to open file";
+	return 0;
+}
